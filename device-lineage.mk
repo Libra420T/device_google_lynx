@@ -17,6 +17,12 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     EuiccSupportPixelOverlay
+    
+# PixelParts
+include packages/apps/PixelParts/device.mk
+
+# ViPER4AndroidFX
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
 # HBM
 PRODUCT_PACKAGES += \
